@@ -1,0 +1,47 @@
+
+#Escribe un programa que pida un número de mes (1 para enero, 2 para febrero, etc.) y determine en qué trimestre del año se encuentra.
+
+mes =int(input("ingrese el numero del mes (1-12):"))
+
+if mes == 1:
+    nombre = "enero"
+elif mes == 2:
+    nombre = "febrero"
+elif mes == 3:
+    nombre = "marzo:"
+elif mes == 4:
+    nombre = "abril:"
+elif mes == 5:
+    nombre ="mayo:"
+elif mes == 6:
+    nombre ="junio:"
+elif mes == 7:
+    nombre ="julio:"
+elif mes == 8:
+    nombre ="agosto:"
+elif mes == 9:
+    nombre ="septiembre:"
+elif mes == 10:
+    nombre ="octubre:"
+elif mes == 11:
+    nombre ="noviembre:"
+elif mes == 12:
+    nombre ="diciembre:"
+
+else:
+    print("numero invalido ingrese un numero valido de (1,12):")
+
+if 1 <= mes <= 3:
+    trimestre = "primer trimestre"
+
+elif 4 <= mes <= 6:
+    trimestre = "segundo trimestre"
+
+elif 7 <= mes <= 9:
+    trimestre = "tercer trimestre"
+
+else:
+    trimestre = "cuarto trimestre"
+
+print(f"mes: {nombre}")
+print(f"pertenece al: {trimestre}")
