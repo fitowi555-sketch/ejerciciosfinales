@@ -8,9 +8,15 @@ def listaordenada(lista):
             return False
     return True
 
-numero = [1,2,3,4,5,6,7,8,9,10]
-print(listaordenada(numero))
+def verificar_y_ordenar(lista):
+    if listaordenada(lista):
+        print("la lista ya esta ordenada",lista)
 
-numero2 = [1,3,2,4,6,5,7,9,8,10] 
-print(listaordenada(numero2))
+    else:
+        print("la lista no esta ordenada",lista)
+        print("lista ornenada correctamente", sorted(lista))
 
+entrada =input("ingrese la lista separadas por coma: ")
+lista_usuario = list(map(int,entrada. split(",")))
+
+verificar_y_ordenar(lista_usuario)
